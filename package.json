@@ -1,0 +1,16 @@
+{
+  "name": "interceptors-httpparser-leak-repro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproduction for @mswjs/interceptors memory leak: HTTPParser instances accumulate without bound across requests",
+  "type": "module",
+  "scripts": {
+    "test": "node --expose-gc repro.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@mswjs/interceptors": "0.41.8"
+  }
+}
